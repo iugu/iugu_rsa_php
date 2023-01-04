@@ -23,7 +23,7 @@ class IUGU_RSA_SAMPLE
     {
         // Link de referência: https://dev.iugu.com/reference/autentica%C3%A7%C3%A3o#quinto-passo
 
-        $datetime = new \DateTime();
+        $datetime = new \DateTime($this->timezone);
         $datetime->setTimeZone(new \DateTimeZone($this->timezone));
         $datetime_iso8601 = sprintf(
             '%s%s',
